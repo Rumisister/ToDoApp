@@ -19,17 +19,24 @@
 
 ```plaintext
 ToDoApp/
-├── Project.swift                  # Tuist 메인 구성 파일
-├── Tuist/                         # Tuist 설정 및 Config 파일
-├── App/                           # 앱 Entry Point (AppDelegate/Scene)
-├── Features/                      # 주요 화면별 기능 모듈
+├── App/                         # Entry point, Coordinator
+│   └── Sources/
+│       └── ToDoApp.swift
+│       └── AppCoordinator.swift
+├── Features/
 │   └── ToDoList/
 │       └── Sources/
-├── Core/                          # 공통 Model / Storage 등
+│           └── ToDoListView.swift
+│           └── ToDoListViewModel.swift
+│           └── ToDoListCoordinator.swift
+├── Core/
+│   └── Model/
+│       └── Sources/
+│           └── ToDoItem.swift
+├── DesignSystem/
 │   └── Sources/
-├── DesignSystem/                 # UI 컴포넌트, 컬러, 폰트 등
-│   └── Sources/
-└── Tests/                         # 유닛 테스트
+│       └── Colors.swift
+│       └── Fonts.swift
 ```
 
 ## 🧪 사용 기술 (Tech Stack)
