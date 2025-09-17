@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		56BD44F833B679F73ED23999 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F1D7A8D2CFC5701DEED7D /* ToDoItem.swift */; };
+		CBF387552E7AE67F0042CE68 /* ToDoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF387542E7AE6760042CE68 /* ToDoStorage.swift */; };
+		CBF387572E7AE6AC0042CE68 /* UserDefaultsToDoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF387562E7AE6A10042CE68 /* UserDefaultsToDoStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		9861501D039B06394C2A7E64 /* Model-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Model-Info.plist"; sourceTree = "<group>"; };
 		BD19E51E52BA74F9617F5F81 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58F1D7A8D2CFC5701DEED7D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		CBF387542E7AE6760042CE68 /* ToDoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStorage.swift; sourceTree = "<group>"; };
+		CBF387562E7AE6A10042CE68 /* UserDefaultsToDoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsToDoStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		BD6D8EACB20C945F687C5726 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CBF387562E7AE6A10042CE68 /* UserDefaultsToDoStorage.swift */,
+				CBF387542E7AE6760042CE68 /* ToDoStorage.swift */,
 				C58F1D7A8D2CFC5701DEED7D /* ToDoItem.swift */,
 			);
 			path = Sources;
@@ -119,8 +125,6 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = E54AD61EE741D56688714B85 /* Build configuration list for PBXProject "Model" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -156,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56BD44F833B679F73ED23999 /* ToDoItem.swift in Sources */,
+				CBF387552E7AE67F0042CE68 /* ToDoStorage.swift in Sources */,
+				CBF387572E7AE6AC0042CE68 /* UserDefaultsToDoStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +305,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

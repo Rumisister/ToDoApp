@@ -7,10 +7,13 @@
 
 import SwiftUI
 import ToDoList
+import Model
 
 final class AppCoordinator {
     func start() -> some View {
-        let todoListCoordinator = ToDoListCoordinator()
-        return todoListCoordinator.start()
+        let storage = UserDefaultsToDoStorage()
+        let viewModel = ToDoListViewModel(storage: storage)
+
+        return ToDoListView(viewModel: viewModel)
     }
 }
