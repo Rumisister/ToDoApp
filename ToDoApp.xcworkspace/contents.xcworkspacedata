@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:App/ToDoApp.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Core"
+      name = "Core">
+      <FileRef
+         location = "group:Model/Model.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:DesignSystem/DesignSystem.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Features"
+      name = "Features">
+      <FileRef
+         location = "group:ToDoList/ToDoList.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
